@@ -58,7 +58,6 @@
     <Compile Include="Assets/Scripts/combat/CombatEventBus.cs" />
     <Compile Include="Assets/Scripts/combat/CombatTargetingService.cs" />
     <Compile Include="Assets/Scripts/CombatTurnController.cs" />
-    <Compile Include="Assets/Scripts/StartingController.cs" />
     <Compile Include="Assets/Scripts/enemies/EncounterPool.cs" />
     <Compile Include="Assets/Scripts/statuses/StatusController.cs" />
     <Compile Include="Assets/Scripts/player/PlayerInfoHUD.cs" />

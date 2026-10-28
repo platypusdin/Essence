@@ -64,7 +64,8 @@ public class BattlefieldLayout : MonoBehaviour
             );
 
             slot.name = $"HeroRank{heroIndex + 1}";
-            slot.Configure(heroIndex + 1);
+            // slot.Configure(heroIndex + 1);
+            slot.Configure(heroIndex + 1, BattleSide.Heroes);
 
             heroSlots[heroIndex] = slot;
             heroPositions[heroIndex] = slot.Anchor;
@@ -72,12 +73,17 @@ public class BattlefieldLayout : MonoBehaviour
             // Враги: ранг 1 находится слева, ранг 4 — справа.
             Vector3 enemyPosition =
                 enemySpawnPoint.position + Vector3.right * (i * spacing);
+            MovementSlot slotEnemy = Instantiate(
+                slotPrefab,
+                enemyPosition,
+                Quaternion.identity,
+                enemyArea.transform
+            );
 
-            GameObject rankAnchor = new GameObject($"EnemyRank{i + 1}");
-            rankAnchor.transform.SetParent(enemyArea.transform, false);
-            rankAnchor.transform.position = enemyPosition;
+            slotEnemy.name = $"EnemyRank{i + 1}";
+            slotEnemy.Configure(i + 1, BattleSide.Enemies);
 
-            enemyPositions[i] = rankAnchor.transform;
+            enemyPositions[i] = slotEnemy.Anchor;
         }
 
         return true;

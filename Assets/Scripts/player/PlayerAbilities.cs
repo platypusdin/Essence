@@ -96,6 +96,29 @@ public class PlayerAbilities : MonoBehaviour, IAbilityProvider
     public void SelectTarget(GameObject target)
     {
         currentTarget = target;
+
+        MovementSlot[] slots =
+            FindObjectsByType<MovementSlot>(FindObjectsSortMode.None);
+
+        foreach (MovementSlot slot in slots)
+        {
+            if (slot == null)
+                continue;
+
+            bool selected = false;
+
+            if (target != null &&
+                battlefield != null &&
+                battlefield.TryFindRank(target, out BattleRank rank))
+            {
+                selected =
+                    slot.Side == rank.Side &&
+                    slot.Position == rank.Index;
+            }
+
+            slot.SetSelected(selected);
+        }
+
         UpdateButtons();
     }
 
@@ -172,6 +195,17 @@ public class PlayerAbilities : MonoBehaviour, IAbilityProvider
         return result.ToArray();
     }
 
+    public void SelectTargetAtRank(BattleSide side, int index)
+    {
+        if (battlefield == null)
+            return;
+
+        BattleRank rank = new BattleRank(side, index);
+        GameObject occupant = battlefield.GetOccupant(rank);
+
+        SelectTarget(occupant);
+    }
+
     private void UpdateButtons()
     {
         if (buttons == null)
@@ -237,33 +271,49 @@ public class PlayerAbilities : MonoBehaviour, IAbilityProvider
                 return target == gameObject;
 
             case AbilityTarget.Enemy:
-            {
-                Enemy enemy = target.GetComponent<Enemy>();
+                {
+                    Enemy enemy = target.GetComponent<Enemy>();
 
-                return enemy != null &&
-                       !enemy.IsDead &&
-                       targetingService != null &&
-                       targetingService.CanTarget(
-                           gameObject,
-                           target,
-                           ability.attackType);
-            }
+                    return enemy != null &&
+                           !enemy.IsDead &&
+                           targetingService != null &&
+                           targetingService.CanTarget(
+                               gameObject,
+                               target,
+                               ability.attackType);
+                }
 
             case AbilityTarget.Corpse:
-            {
-                Enemy enemy = target.GetComponent<Enemy>();
+                {
+                    Enemy enemy = target.GetComponent<Enemy>();
 
-                return enemy != null &&
-                       enemy.IsDead &&
-                       battlefield != null &&
-                       battlefield.TryFindRank(
-                           target,
-                           out BattleRank rank) &&
-                       rank.Side == BattleSide.Enemies;
-            }
+                    return enemy != null &&
+                           enemy.IsDead &&
+                           battlefield != null &&
+                           battlefield.TryFindRank(
+                               target,
+                               out BattleRank rank) &&
+                           rank.Side == BattleSide.Enemies;
+                }
 
             default:
                 return false;
         }
+    }
+
+    public void ResetTarget()
+    {
+        currentTarget = null;
+
+        MovementSlot[] slots =
+            FindObjectsByType<MovementSlot>(FindObjectsSortMode.None);
+
+        foreach (MovementSlot slot in slots)
+        {
+            if (slot != null)
+                slot.SetSelected(false);
+        }
+
+        UpdateButtons();
     }
 }

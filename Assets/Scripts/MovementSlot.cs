@@ -11,15 +11,21 @@ public class MovementSlot : MonoBehaviour
     [SerializeField] private SpriteRenderer highlight;
 
     private int position;
+    private bool targetSelected;
+    private bool movementValid;
+    private bool movementSelected;
+    private bool movementDimmed;
 
     public int Position => position;
     public Transform Anchor => transform;
+    private BattleSide side;
+
+    public BattleSide Side => side;
 
     private void Awake()
     {
         SetState(false, false, false);
     }
-
     private void OnMouseDown()
     {
         AllyPlacementController placement =
@@ -34,12 +40,20 @@ public class MovementSlot : MonoBehaviour
         PlayerMovement playerMovement =
             FindFirstObjectByType<PlayerMovement>();
 
-        playerMovement?.TryMoveTo(this);
+        if (playerMovement != null && playerMovement.IsMovementMode)
+        {
+            playerMovement.TryMoveTo(this);
+            return;
+        }
+
+        PlayerAbilities playerAbilities = FindFirstObjectByType<PlayerAbilities>();
+        playerAbilities?.SelectTargetAtRank(side, position);
     }
 
-    public void Configure(int newPosition)
+    public void Configure(int newPosition, BattleSide newSide)
     {
         position = Mathf.Clamp(newPosition, 1, 4);
+        side = newSide;
     }
 
     public bool ContainsWorldPoint(Vector2 worldPoint)
@@ -51,18 +65,38 @@ public class MovementSlot : MonoBehaviour
             && local.y <= clickableSize.y;
     }
 
+    public void SetSelected(bool selected)
+    {
+        targetSelected = selected;
+        RefreshHighlight();
+    }
+
+
     public void SetState(bool valid, bool selected, bool dimmed)
+    {
+        movementValid = valid;
+        movementSelected = selected;
+        movementDimmed = dimmed;
+
+        RefreshHighlight();
+    }
+
+    private void RefreshHighlight()
     {
         if (highlight == null)
             return;
 
-        highlight.enabled = valid || selected || dimmed;
+        highlight.enabled =
+            targetSelected ||
+            movementValid ||
+            movementSelected ||
+            movementDimmed;
 
-        if (valid)
-            highlight.color = validColor;
-        else if (selected)
+        if (targetSelected || movementSelected)
             highlight.color = selectedColor;
-        else if (dimmed)
+        else if (movementValid)
+            highlight.color = validColor;
+        else if (movementDimmed)
             highlight.color = blockedColor;
     }
 }

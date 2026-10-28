@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AbilitySet
   id: 1
   displayName: "\u0427\u0443\u043C\u043D\u043E\u0439 \u0432\u044B\u0432\u043E\u0434\u043E\u043A"
-  abilities: []
+  abilities:
+  - {fileID: 11400000, guid: f93eea1140d2d40ccb5a75e2a3135d3e, type: 2}
+  - {fileID: 11400000, guid: 29c05e64c7ff942fa8e49c22abad9400, type: 2}
+  - {fileID: 11400000, guid: 517cffbcf586e419cad89b0cab836db3, type: 2}
+  - {fileID: 11400000, guid: eed18ff135521400791dd510f7d844e2, type: 2}
   bonusThresholds: []

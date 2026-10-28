@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool firstMoveFree = true;
 
     public int CurrentPosition => currentPosition;
+    public bool IsMovementMode => movementMode;
     public MovementSlot[] Slots => slots;
 
     public void Initialize(
@@ -50,11 +51,19 @@ public class PlayerMovement : MonoBehaviour
             return;
 
         ShowAvailableSlots();
-
         PlayerAbilities playerAbilities =
             GetComponent<PlayerAbilities>();
 
-        playerAbilities?.SelectTarget(gameObject);
+        if (playerAbilities != null)
+        {
+            playerAbilities.SelectTarget(gameObject);
+
+            foreach (MovementSlot slot in slots)
+            {
+                if (slot != null)
+                    slot.SetSelected(false);
+            }
+        }
     }
 
     private bool TrySyncPosition()

@@ -7,11 +7,18 @@ public class CharacterStatusUI : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private TMP_Text healthText;
+
+    [Header("Barrier")]
+    [SerializeField] private GameObject shieldInfo;
+    [SerializeField] private Transform barrierBar;
+    [SerializeField] private TMP_Text barrierText;
 
     [Header("Effects")]
     [SerializeField] private Transform effectsContainer;
     [SerializeField] private SpriteRenderer effectIconPrefab;
     [SerializeField] private TMP_Text stackCountPrefab;
+
 
     [Header("Effects Layout")]
     [SerializeField] private float startOffsetX = -1f;
@@ -43,10 +50,14 @@ public class CharacterStatusUI : MonoBehaviour
     public void UpdateHealth(int currentHp, int maxHp)
     {
         healthBar?.SetHealth(currentHp, maxHp);
+
+        if (healthText != null)
+            healthText.text = currentHp.ToString();
     }
 
     private void RefreshEffects()
     {
+        RefreshBarrier();
         ClearEffects();
 
         if (statusController == null ||
@@ -79,6 +90,29 @@ public class CharacterStatusUI : MonoBehaviour
                 );
             }
         }
+    }
+
+    private void RefreshBarrier()
+    {
+        if (shieldInfo == null)
+            return;
+
+        int currentBarrier = 0;
+
+        if (statusController != null)
+        {
+            foreach (StatusInstance status in statusController.ActiveStatuses)
+            {
+                if (status.Data is BarrierStatusData)
+                    currentBarrier += status.CurrentValue;
+            }
+        }
+
+        bool hasBarrier = currentBarrier > 0;
+        shieldInfo.SetActive(hasBarrier);
+
+        if (hasBarrier && barrierText != null)
+            barrierText.text = currentBarrier.ToString();
     }
 
     private void CreateIcon(Sprite sprite, float x)

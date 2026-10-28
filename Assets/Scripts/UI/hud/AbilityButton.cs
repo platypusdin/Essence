@@ -110,7 +110,6 @@ public class AbilityButton : MonoBehaviour
                 return;
 
             playerAbilities.StartCooldown(ability);
-            playerAbilities.ClearTarget();
         }
     }
 }

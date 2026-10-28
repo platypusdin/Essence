@@ -48,6 +48,10 @@ public class RoomCompletionController : MonoBehaviour
             return;
 
         victoryShown = true;
+        PlayerAbilities playerAbilities =
+            FindFirstObjectByType<PlayerAbilities>();
+
+        playerAbilities?.ResetTarget();
 
         FindPlayerExperience();
 
