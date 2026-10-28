@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea7874ac3df9466a8e2a28d09294701, type: 3}
+  m_Name: Burning
+  m_EditorClassIdentifier: Assembly-CSharp::BurnStatusData
+  effectName: "\u0413\u043E\u0440\u0435\u043D\u0438\u0435"
+  icon: {fileID: 21300000, guid: 3ad0d021a8d3341f5ac8e8de689d78d9, type: 3}
+  durationMode: 0
+  defaultDurationStacks: 1
+  maxDurationStacks: 5
+  timing: 2
+  reapplicationPolicy: 0
+  consumeOnDamage: 0
+  damagePerTurn: 5

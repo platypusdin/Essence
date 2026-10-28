@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51be77cf5f19e433580d4ac32beec3a0, type: 3}
+  m_Name: C006_Laceration
+  m_EditorClassIdentifier: Assembly-CSharp::RaggedWoundCoreAbility
+  abilityName: "\u0420\u0432\u0430\u043D\u0430\u044F \u0440\u0430\u043D\u0430"
+  icon: {fileID: 21300000, guid: 4a6f1a1156e1146a7a01afd387f96826, type: 3}
+  activationType: 0
+  apCost: 1
+  attackType: 1
+  target: 0
+  range: 4
+  cooldownTurns: 0
+  aiSelectionPriority: 5
+  damage: 7
+  damageType: 0
+  bleedStatus: {fileID: 11400000, guid: 09728028e571a4fb9b0b5788cc80c6af, type: 2}
+  bleedStacks: 2

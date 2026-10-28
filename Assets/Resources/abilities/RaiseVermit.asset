@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a1f614468334c0c90ef38b7b93630f, type: 3}
+  m_Name: RaiseVermit
+  m_EditorClassIdentifier: Assembly-CSharp::RaiseVermitAbility
+  abilityName: Raise Vermit
+  icon: {fileID: 21300000, guid: f06b6890d99cf4c6397f2e43701f2d2d, type: 3}
+  apCost: 4
+  target: 1
+  range: 4
+  allyPrefab: {fileID: 8812947527337644016, guid: 850c66156f7524a6f9632da90ef72085, type: 3}
+  allyData: {fileID: 11400000, guid: de9906326eac54d5f84bf82d540fa37b, type: 2}

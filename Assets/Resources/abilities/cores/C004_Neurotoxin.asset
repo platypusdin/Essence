@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce7292eb7ca14e1393478022fa0264b, type: 3}
+  m_Name: C004_Neurotoxin
+  m_EditorClassIdentifier: Assembly-CSharp::NeurotoxinCoreAbility
+  abilityName: "\u041D\u0435\u0439\u0440\u043E\u0442\u043E\u043A\u0441\u0438\u043D"
+  icon: {fileID: 21300000, guid: 989e224c363aa448a9b1ec7e4567b212, type: 3}
+  activationType: 1
+  apCost: 0
+  target: 0
+  range: 0
+  cooldownTurns: 0
+  aiSelectionPriority: 5
+  poisonThreshold: 4
+  speedReduction: 2

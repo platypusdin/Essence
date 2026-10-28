@@ -1,0 +1,337 @@
+Unity Editor version:    6000.5.9f1 (b57deb96f08d)
+Branch:                  6000.5/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.6.1 (Build 24G90)
+Darwin version:          24.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-10-28T12:24:06Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dinanigmatullina" at "2026-10-28T12:24:06.482154Z"
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorkerHW0
+-projectPath
+/Users/dinanigmatullina/Essence
+-logFile
+Logs/AssetImportWorkerHW0.log
+-srvPort
+63986
+-parentPid
+88331
+-analyticsCloudUserId
+anonymous
+-analyticsLocalProjectId
+161dbe7b51e6d4d1c8b1b83a552bf97a
+-editorAnalyticsEnabled
+1
+-cbmEditorLicense
+6a5b51438e148496ac1867683f388c2e34a094fb
+-cbmMachineId
+MYzv5xGWeY5RzOzI4PIXtMw/Ckg=
+-licensingIpc
+LicenseClient-dinanigmatullina
+-noDiagnosticSwitchPersistentStore
+-job-worker-count
+3
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+-force-metal
+-name AssetImport
+Successfully changed project path to: /Users/dinanigmatullina/Essence
+/Users/dinanigmatullina/Essence
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Player connection [8302141632]  Target information:
+
+Player connection [8302141632]  * "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 4284301676 [EditorId] 4284301676 [Version] 1048832 [Id] OSXEditor(0,MacBook-Air-Dina.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8302141632] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8302141632] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.9f1 (b57deb96f08d)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/dinanigmatullina/Essence/Assets
+Forcing GfxDevice: Metal
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Mac GPU Family: 2
+Apple GPU Family: 7
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              41641134b5ab4cfda489f4ebd8fb5878
+  Correlation Id:          6922df5d119e00ef322336ce35ea5481
+  External correlation Id: 3464494164897155854
+  Machine Id:              MYzv5xGWeY5RzOzI4PIXtMw/Ckg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-dinanigmatullina" (connect: 0.00s, validation: 0.00s, handshake: 0.38s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-dinanigmatullina-notifications" at "2026-10-28T12:24:06.864037Z"
+[Licensing::Module] Licensing Background thread has ended after 0.38s
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/Scripting/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = '/Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56353
+CodeReloadManager initialized
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.5.9f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/6000.5.9f1/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000418 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.457 seconds
+Domain Reload Profiling: 819ms
+	BeginReloadAssembly (70ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (233ms)
+		LoadAssemblies (69ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (177ms)
+				TypeCache.ScanAssembly (163ms)
+	FinalizeReload (458ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (72ms)
+			ProcessInitializeOnLoadMethodAttributes (258ms)
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: F4-VCV2-8MXY-RDYM-VVXE-XXXX
+  Product: Unity Personal
+  Type: ULF
+  Expiration: Unlimited
+[Licensing::Module] License group:
+  Id: 18967662632119-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[CoreBusinessMetrics] Unexpected thread when updating session info.
+[CoreBusinessMetrics] Unexpected thread when updating session info.
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.573 seconds
+Domain Reload Profiling: 1162ms
+	BeginReloadAssembly (125ms)
+		DisableScriptedObjects (5ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (415ms)
+		LoadAssemblies (181ms)
+		AnalyzeDomain (199ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (139ms)
+			BuildScriptInfoCaches (40ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (573ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (226ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+AcceleratorClientConnectionCallback - disconnected - :0
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Launching external process: /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Curl error 3: URL rejected: Error
+Unloading 6771 unused Assets / (5.3 MB). Loaded Objects now: 7764.
+Memory consumption went from 176.6 MB to 171.3 MB.
+Total: 8.295167 ms (FindLiveObjects: 0.464833 ms CreateObjectMapping: 1.605333 ms MarkObjects: 4.675250 ms  DeleteObjects: 1.549334 ms)
+
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:10.909672Z
+  Time since last request: 1903953.55390845797956 seconds.
+  importAddress: GUID: b9fd9615495fd413d9c6119643dee300 - Path: Assets/Prefabs/Hero.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b9fd9615495fd413d9c6119643dee300 - Path: Assets/Prefabs/Hero.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b9fd9615495fd413d9c6119643dee300' -> (Import Result ID: '62e5ce1be8b905f8e0e28ff5ceadc6b0') in 0.171 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=6f96a664507471f3cf44152cb993ebbd DependenciesID=e840922b95df02913cdc066bfbbeddca StaticDependenciesID=0560b5ce5b88bc87e4a98bc135225ba4 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 101
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.098254Z
+  Time since last request: 0.000230083 seconds.
+  importAddress: GUID: bcfe1d8f81a754e0abbf6f9a2dde414b - Path: Assets/Scripts/player/PlayerAbilities.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: bcfe1d8f81a754e0abbf6f9a2dde414b - Path: Assets/Scripts/player/PlayerAbilities.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: bcfe1d8f81a754e0abbf6f9a2dde414b' -> (Import Result ID: 'b6c5421ca48ee4066980816435b87053') in 0.004 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=8a0cb8d632e77c7dbf5b6666be5be8d2 DependenciesID=4a7f2ca36bf8fd5e716effed8e16f87a StaticDependenciesID=9e11b7e310e5a842152d13b69888bb97 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.112354Z
+  Time since last request: 0.000326375 seconds.
+  importAddress: GUID: 005939c22bc004bdabce66b81b85ccf8 - Path: Assets/Scripts/enemies/EnemyAI.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 005939c22bc004bdabce66b81b85ccf8 - Path: Assets/Scripts/enemies/EnemyAI.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 005939c22bc004bdabce66b81b85ccf8' -> (Import Result ID: '0a17b23ab96aaad7f8a1dfd1026490ac') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=996f061a090ec7ada5d243e85d82fbab DependenciesID=3415542c33bd205e89428320c20cc6ba StaticDependenciesID=faf5b0db8f429a51a54f942008ccb24b 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.124827Z
+  Time since last request: 0.000441334 seconds.
+  importAddress: GUID: f93eea1140d2d40ccb5a75e2a3135d3e - Path: Assets/Resources/abilities/cores/C001_VenomBite.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: f93eea1140d2d40ccb5a75e2a3135d3e - Path: Assets/Resources/abilities/cores/C001_VenomBite.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: f93eea1140d2d40ccb5a75e2a3135d3e' -> (Import Result ID: '0d7abf44a32eeb6e94575963c9dc05db') in 0.006 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=1787e7f4438a745f63bf64706d928ed9 DependenciesID=9c13667e6ed612d0c1db5cae057a4996 StaticDependenciesID=df6bd2c03ee9036aa85e3f31ee89da43 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.140199Z
+  Time since last request: 0.000359833 seconds.
+  importAddress: GUID: efa263673dcfa47028f36a24eb53f8cd - Path: Assets/Scripts/enemies/EnemyData.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: efa263673dcfa47028f36a24eb53f8cd - Path: Assets/Scripts/enemies/EnemyData.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: efa263673dcfa47028f36a24eb53f8cd' -> (Import Result ID: '190340183aa8f2ea1fd26424d80f2cf0') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=be90e88e7597e0228b893f4dc2e77eb8 DependenciesID=253a4aca21c0b9ae95ed02b3c16c0c51 StaticDependenciesID=6893dc3d9c231727623a46f9811ef58c 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.15151Z
+  Time since last request: 0.000306125 seconds.
+  importAddress: GUID: 5538fd8184b414908be9947a2444a396 - Path: Assets/Scripts/CombatTurnController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 5538fd8184b414908be9947a2444a396 - Path: Assets/Scripts/CombatTurnController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 5538fd8184b414908be9947a2444a396' -> (Import Result ID: 'cdad18d29be0a78f889aef0d5392be92') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=82b64016e64e8b6d9c61bee4444c1ee1 DependenciesID=4f5b16f8d4de4fb7df57317b314631c2 StaticDependenciesID=33185b704e65b90f7cfbdbd2f1fb3815 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.162909Z
+  Time since last request: 0.000417 seconds.
+  importAddress: GUID: ea066c6c482ea48f1b435e73da375400 - Path: Assets/Resources/enemy/01_PlagueMatriarch.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: ea066c6c482ea48f1b435e73da375400 - Path: Assets/Resources/enemy/01_PlagueMatriarch.asset - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: ea066c6c482ea48f1b435e73da375400' -> (Import Result ID: '71e8397ef34de35c4dd71c873dd10069') in 0.005 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=88b0874adbf3d137f6c0e761a5d04e49 DependenciesID=1375e3686313b3a3b48f63eac22e8d6f StaticDependenciesID=aa677a8f2b8c41bee30f4b9dd3b45008 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.17737Z
+  Time since last request: 0.000225917 seconds.
+  importAddress: GUID: b815206fc393a4faeaa267eca21e676c - Path: Assets/Prefabs/EnemyPreab.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: b815206fc393a4faeaa267eca21e676c - Path: Assets/Prefabs/EnemyPreab.prefab - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: b815206fc393a4faeaa267eca21e676c' -> (Import Result ID: 'c7db55c7658bc4fbddce4b40743a9886') in 0.014 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=e1f34970dd2c8f9292f9bce441dd0543 DependenciesID=48dc8d96a8ddcff23b6b4bd22e36cf76 StaticDependenciesID=00cf4f3242c12d8f978aa0035ec29783 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.200221Z
+  Time since last request: 0.000281833 seconds.
+  importAddress: GUID: c6baa761075f04324a2e77c8a960d8e3 - Path: Assets/Scripts/enemies/EnemyTurn.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: c6baa761075f04324a2e77c8a960d8e3 - Path: Assets/Scripts/enemies/EnemyTurn.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: c6baa761075f04324a2e77c8a960d8e3' -> (Import Result ID: '41dd4cdbf09ef21cc8c5db03ef73fe3b') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=ef300193ba847e3bc1cab0dab726fd3f DependenciesID=88e8c7f36db6a078c3ab1a49ab1131ac StaticDependenciesID=81f02c5030bcf9d7f2207ba75e4ff4e6 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time of request: 2026-10-28T12:24:11.212294Z
+  Time since last request: 0.000336459 seconds.
+  importAddress: GUID: 820e106740f2c47cba256ca8d47809d1 - Path: Assets/Scripts/ability/AbilityCooldownController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B
+Importing 'GUID: 820e106740f2c47cba256ca8d47809d1 - Path: Assets/Scripts/ability/AbilityCooldownController.cs - Importer: ScriptedImporter/UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B' with importer (ScriptedImporter : UnityEditor.QuickSearchModule:UnityEditor.Search:ASIAI0B)
+Imported 'GUID: 820e106740f2c47cba256ca8d47809d1' -> (Import Result ID: '5899e7742afa38de3debea103a49be26') in 0.002 seconds [static and dynamic dependencies]. Details - ImportResultOutputID=dee110fd7b5d9c76cd8d6b58325a0e44 DependenciesID=acf245ade8446b333b9a87d627f3b59b StaticDependenciesID=654f583a84a4341ba81e94919606f9e3 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+AcceleratorClientConnectionCallback - disconnected - :0
+WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Shader Hidden/ChartRasterizerHardware is not supported: GPU does not support conservative rasterization
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (2.6 MB). Loaded Objects now: 7766.
+Memory consumption went from 172.5 MB to 169.8 MB.
+Total: 9.981958 ms (FindLiveObjects: 0.330750 ms CreateObjectMapping: 0.595333 ms MarkObjects: 8.335833 ms  DeleteObjects: 0.718875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+Editor requested this worker to shutdown with reason: Editor is closing down
+AcceleratorClientConnectionCallback - disconnected - :0
+Thread 0x327387000 may have been prematurely finalized
+AssetImportWorker is now disconnected from the server
+Process exiting

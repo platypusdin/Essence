@@ -1,0 +1,31 @@
+[2026-10-28T12:23:59.537Z][INFO] Command-line: /Applications/Unity/Hub/Editor/6000.5.9f1/Unity.app/Contents/Helpers/PackageManager/Server/UnityPackageManager server -s 88331 --ipc-path /tmp/Unity-Upm-88331.sock -l 2 --log-file /Users/dinanigmatullina/Essence/Logs/upm.log
+[2026-10-28T12:23:59.558Z][INFO] IPC server started (IPC path=/tmp/Unity-Upm-88331.sock).
+[2026-10-28T12:23:59.558Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-88331.
+[2026-10-28T12:24:00.963Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:01.101Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:01.109Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-10-28T12:24:01.119Z][INFO] project:list-packages --> 200 (155 ms)
+[2026-10-28T12:24:01.119Z][INFO] config:project:get-registries --> 200 (10 ms)
+[2026-10-28T12:24:01.190Z][INFO] project:list-packages --> 200 (89 ms)
+[2026-10-28T12:24:04.170Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:04.181Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:04.294Z][INFO] project:list-packages --> 200 (125 ms)
+[2026-10-28T12:24:04.307Z][INFO] project:list-packages --> 200 (126 ms)
+[2026-10-28T12:24:06.045Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:06.125Z][INFO] project:list-packages --> 200 (80 ms)
+[2026-10-28T12:24:06.165Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-10-28T12:24:06.167Z][INFO] config:project:get-registries --> 200 (2 ms)
+[2026-10-28T12:24:09.246Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:09.341Z][INFO] project:list-packages --> 200 (95 ms)
+[2026-10-28T12:24:11.010Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-10-28T12:24:12.940Z][INFO] project:list-packages --> 200 (1930 ms)
+[2026-10-28T12:32:09.028Z][INFO] Received shutdown request (SIGTERM), shutting down Unity Package Manager

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5892657eb8a24c4f9ad47b8604e2893, type: 3}
+  m_Name: Rats
+  m_EditorClassIdentifier: Assembly-CSharp::EncounterPool
+  enemyPool:
+  - {fileID: 11400000, guid: ea066c6c482ea48f1b435e73da375400, type: 2}
+  minEnemyCount: 1
+  maxEnemyCount: 1
+  experienceReward: 150
+  abilityDrops:
+  - ability: {fileID: 11400000, guid: f93eea1140d2d40ccb5a75e2a3135d3e, type: 2}
+    dropChance: 100
